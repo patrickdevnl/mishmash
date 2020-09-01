@@ -8,9 +8,8 @@ import java.util.Set;
 
 @Getter
 @Setter
-public class Activity {
-    private String name;
-    private String host;
-    private int numberOfSlots;
-    private Set<Integer> availableDuring = new HashSet<>();
+public class PlannedActivity {
+    private TimeSlot timeSlot;
+    private Activity activity;
+    private Set<Participant> participants = new HashSet<>();
 }
